@@ -262,5 +262,35 @@
 		</dependencies>
 	</dependencyManagement>
 	<profiles>
+		<profile>
+			<id>ts1</id>
+			<build>
+				<plugins>
+					<!-- Compiler plug-in -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+
+						<configuration>
+							<source>${jdk.level}</source>
+							<target>${jdk.level}</target>
+						</configuration>
+					</plugin>
+					<!-- Below plug-in is used to execute tests -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.19.1</version>
+						<configuration>
+							<testFailureIgnore>true</testFailureIgnore>
+							<suiteXmlFiles>	
+								<suiteXmlFile>ts1.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 	</profiles>
 </project>

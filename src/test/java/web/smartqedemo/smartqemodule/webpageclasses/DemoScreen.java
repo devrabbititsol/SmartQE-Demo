@@ -9,7 +9,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 @SuppressWarnings("unused")
 public class DemoScreen extends BaseClass {
 	
-	public static String primaryInfo  = "{\"user_id\":7,\"is_generate\":false,\"is_execute\":false,\"is_web\":true,\"project_url\":\"http://www.devrabbit.com/\",\"report_upload_url\":\"https://192.168.1.142:8080/TAF_Automation_DR/UploadReportFile\",\"project_name\":\"SmartQE-Demo\",\"project_description\":\"\",\"project_id\":200,\"module_name\":\"SmartQEModule\",\"module_description\":\"\",\"sub_module_id\":0,\"module_id\":345,\"testcase_name\":\"TC_Test\",\"testcase_id\":408,\"testset_id\":0,\"executed_timestamp\":-2086768001,\"browser_type\":\"chrome\"}";
+	public static String primaryInfo  = "{\"user_id\":7,\"is_generate\":false,\"is_execute\":false,\"is_web\":true,\"project_url\":\"http://www.devrabbit.com/\",\"report_upload_url\":\"https://192.168.1.142:8080/TAF_Automation_DR/UploadReportFile\",\"project_name\":\"SmartQE-Demo\",\"project_description\":\"\",\"project_id\":0,\"module_name\":\"SmartQEModule\",\"module_description\":\"\",\"sub_module_id\":0,\"module_id\":345,\"testcase_name\":\"TC_Test\",\"testcase_id\":408,\"testset_name\":\"Ts1\",\"testset_id\":53,\"executed_timestamp\":-2084034492,\"browser_type\":\"chrome\"}";
 
 	public static String projectName = "smartqedemo";
 	public WebDriver driver;
