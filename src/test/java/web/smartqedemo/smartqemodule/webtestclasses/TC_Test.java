@@ -47,6 +47,10 @@ public class TC_Test extends BaseClass {
 		int datasetScreencount = 1;
 		DemoScreen objDemoScreen = PageFactory.initElements(driver, DemoScreen.class);
 		testLogHeader(test, "Verify DemoScreen page");
+		 try{
+			 Thread.sleep(2000);
+		 }catch(Exception e){
+		 }
 String text1 = objDemoScreen.clkAContact_290916();
 		if(text1.equalsIgnoreCase(configFileObj.getProperty("Contact"+ i + datasetScreencount))){
 			printSuccessLogAndReport(test, logger,  "Clicked on : " + configFileObj.getProperty("Contact"+ i + datasetScreencount));
@@ -69,7 +73,8 @@ String text1 = objDemoScreen.clkAContact_290916();
 			setUP();
 			if(isElementDispalyed) { DemoScreenTest(datasets);}
 			tearDown();
-		}	}
+		}
+	}
 
 	
 	public void tearDown() throws Exception {
